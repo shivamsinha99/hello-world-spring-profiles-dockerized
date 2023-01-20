@@ -1,0 +1,4 @@
+spring:
+  message: Hello from the Production Side!
+server:
+  port: 9090
