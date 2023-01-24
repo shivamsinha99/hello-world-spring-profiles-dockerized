@@ -1,4 +1,2 @@
 spring:
   message: Hello from the Staging Side!
-server:
-  port: 8082

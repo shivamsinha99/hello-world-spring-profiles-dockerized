@@ -1,4 +1,2 @@
 spring:
   message: Hello from the Dev Side!
-server:
-  port: 8081

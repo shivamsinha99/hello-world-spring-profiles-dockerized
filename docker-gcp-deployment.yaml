@@ -1,0 +1,21 @@
+apiVersion: app/latest
+kind: Deployment
+metadata:
+  name: docker-gcp-deployment
+  labels:
+    app: docker-gcp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: docker-gcp
+    template:
+      metadata:
+        labels:
+          app: docker-gcp
+      spec:
+        containers:
+          - name: spring-boot-cluster
+            image: shivamsinha99/hello-world
+            ports:
+            - containerPort: 8080
